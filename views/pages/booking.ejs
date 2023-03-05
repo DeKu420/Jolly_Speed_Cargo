@@ -1,0 +1,36 @@
+<%- include("../components/header") -%>
+<div class="bookingSlide">
+  <div class="formContainer">
+    <div class="bookingMan">
+      <img src="assets/Man_Box.png" alt="" />
+    </div>
+    <div class="formBook">
+      <h1>GET A FREE QUOTE</h1>
+      <h3>WE ALWAYS USE BEST & FASTEST FLEETS</h3>
+      <form action="https://formspree.io/f/xdovzbgw" method="POST">
+        <input type="text" name="name" placeholder="Full Name*" id="" />
+        <input type="email" name="email" placeholder="Email Address*" id="" />
+        <div class="address">
+          <input type="text" name="pickup" placeholder="Pickup" id="" />
+          <input
+            type="text"
+            name="destinaton"
+            placeholder="Destination"
+            id=""
+          />
+        </div>
+        <select type="text" name="service" id="">
+          <option value="">Select Service</option>
+          <option value="Office Shifting">Office Shifting</option>
+          <option value="Automobile Transportation">
+            Automobile Transportation
+          </option>
+          <option value="Corporate Relocation">Corporate Relocation</option>
+        </select>
+        <input type="text" name="Phone No." placeholder="Phone No." id="" />
+        <button type="submit" class="submitBtn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include("../components/footer") -%>

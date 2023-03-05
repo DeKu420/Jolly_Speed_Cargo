@@ -1,0 +1,493 @@
+/* 1st slide */
+.purpleBg {
+  background-color: #8c52ff;
+  height: 100vh;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.whiteBg {
+  background-color: #efefef;
+  height: 100vh;
+}
+
+.logo {
+  /* padding: 7rem 4rem 0 4rem; */
+  margin-bottom: 2rem;
+  transform: scale(0.8);
+}
+
+.title {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #efefef;
+  padding-left: 2rem;
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.title p {
+  margin-bottom: 3rem;
+}
+
+.title-gif {
+  height: 500px;
+}
+
+.btn {
+  padding: 1.5rem;
+}
+
+.learn {
+  font-size: 30px;
+  margin: 0;
+}
+
+/* 2nd Slide */
+.container-2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.man {
+  border: #193f56 2px solid;
+  border-radius: 10%;
+  margin-right: 4rem;
+  /* padding: 10px; */
+}
+
+.about-header {
+  color: #193f56;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  font-weight: 900;
+}
+
+.about-para {
+  color: #193f56;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* 3rd Slide */
+.functionsHeadDiv {
+  display: flex;
+  align-items: center;
+}
+
+.funcHeader {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 5rem;
+  color: #efefef;
+  padding: 10px 20px 5px 20px;
+  border: 2px solid #efefef;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+
+.imgFuncDiv {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.infoFuncDiv1 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #efefef;
+  font-family: "Roboto Mono", monospace;
+}
+
+.infoFuncDiv1 h2 {
+  margin-top: 1.5rem;
+  font-size: 2.5em;
+}
+
+.infoFuncDiv1 h3 {
+  font-size: 1.25em;
+}
+
+.infoFuncDiv1 img {
+  height: 20rem;
+  width: 20rem;
+  border: 2px solid #efefef;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* 4th Slide */
+
+.cardsHeadDiv {
+  display: flex;
+  align-items: center;
+}
+
+.cardHeader {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 5rem;
+  color: #193f56;
+  padding: 10px 20px 5px 20px;
+  border: 2px solid #193f56;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 7rem;
+  margin-left: 5.75rem;
+  margin-bottom: 2rem;
+}
+
+.cardSec {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: auto;
+  color: #193f56;
+}
+
+.card {
+  border: #193f56 2px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #efefef;
+}
+
+.card-body {
+  background-color: #efefef;
+}
+
+.card img {
+  height: 20rem;
+  width: 20rem;
+  margin: auto;
+}
+
+.card-body h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.card-body li {
+  font-size: 1.5em;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* 5th slide */
+
+.clientDiv {
+  display: flex;
+  align-items: center;
+}
+
+.clientHeader {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 5rem;
+  color: #efefef;
+  padding: 10px 20px 5px 20px;
+  border: 2px solid #efefef;
+  width: fit-content;
+  border-radius: 20px;
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+
+.testDiv {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.testDivCont {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #efefef;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 6rem;
+}
+
+.testDivCont h3 {
+  font-size: 1.5em;
+}
+
+.nameTest {
+  margin-top: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: right;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  margin-right: 2rem;
+  align-items: center;
+  color: #193f56;
+}
+
+.footer img {
+  height: 60rem;
+}
+
+.footer h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.footer h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.footerInfo {
+  margin-bottom: 3rem;
+}
+
+.footerInfo img {
+  height: 40px;
+  margin-right: 2rem;
+}
+
+/* tags */
+
+body {
+  margin: 0px;
+}
+
+nav {
+  /* color: black; */
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.103);
+  /* font-weight: 500; */
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  /* color: #C5FF52; */
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* Company Profile */
+
+.companySlide {
+  background-color: #8c52ff;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companySlide h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #efefef;
+}
+
+/* 2nd Slide */
+.companyAbout {
+  background-color: #efefef;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  /* height: 100vh; */
+  padding: 50px 0;
+}
+
+.companyAboutTitle {
+  font-family: "Martel Sans", sans-serif;
+  color: #193f56;
+  text-align: start;
+  width: 80%;
+  margin: auto;
+}
+
+.companyAboutText {
+  width: 80%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: auto;
+  font-size: 20px;
+}
+
+.gallery {
+  background-color: #8c52ff;
+  height: 100vh;
+  align-items: center;
+}
+
+.galleryTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.mediaItems {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.mediaItems img {
+  /* height: 20vh; */
+  margin-bottom: 10px;
+}
+
+.imgItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  gap: 2rem;
+}
+
+.buttonClass {
+  /* width: 65%; */
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.buttonClass button {
+  padding: 1rem 15rem;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.vidDiv {
+  display: flex;
+  justify-content: center;
+  /* width: 80%;
+  margin: auto; */
+}
+
+.vidItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 80%;
+  margin-left: 20rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.vidItems iframe {
+  width: 450px;
+  height: 300px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #193f56;
+}
+
+/* Online Booking */
+
+.bookingSlide {
+  background-color: #8c52ff;
+  height: 100vh;
+}
+
+.formContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.formBook input {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.formBook select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.formBook {
+  background-color: #ebebeb;
+  padding: 2rem;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submitBtn {
+  background-color: #ffad00;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
