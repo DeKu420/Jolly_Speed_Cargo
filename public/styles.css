@@ -491,3 +491,27 @@ form {
   border-radius: 5px;
   border: none;
 }
+
+.blogsText {
+  width: 80%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: auto;
+  font-size: 20px;
+}
+
+.BlogsTitle {
+  font-family: "Martel Sans", sans-serif;
+  color: #193f56;
+  text-align: start;
+  width: 80%;
+  margin: auto;
+}
+.readMore{
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 173, 0);
+  text-decoration: none;
+}

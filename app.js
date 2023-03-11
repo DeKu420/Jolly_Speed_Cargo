@@ -18,6 +18,8 @@ app.use("/company", companyRouter);
 const bookingRouter = require("./routes/booking.js");
 app.use("/booking", bookingRouter);
 
+const blogRouter = require("./routes/blogs.js");
+app.use("/blogs", blogRouter);
 
 // Start the server
 const PORT = process.env.PORT || 8000;
