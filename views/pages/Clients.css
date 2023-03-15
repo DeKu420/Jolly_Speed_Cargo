@@ -1,0 +1,53 @@
+.container{
+    padding: 0.5px;
+    margin: 0.5px;
+}
+
+.text{
+    background-color: #8c52ff;
+    height: 10vh;
+    width: auto;
+    letter-spacing: 10;
+    font-size:larger;
+    margin: 0.5%;
+    margin-top: 0.5%;
+    color:aliceblue;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+.text1{
+    height: 10vh;
+    width: auto;
+    letter-spacing: 10;
+    font-size:larger;
+    margin: 0.5%;
+    margin-top: 0.5%;
+    color: rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+img{
+    width: 100px;
+}
+.grid{
+    background-color: #efefef;
+
+}
+table{
+    align-items: center;
+    border-spacing: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+th, td {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }

@@ -21,6 +21,12 @@ app.use("/booking", bookingRouter);
 const blogRouter = require("./routes/blogs.js");
 app.use("/blogs", blogRouter);
 
+const ContactUsRouter = require("./routes/ContactUs.js");
+app.use("/ContactUs", ContactUsRouter);
+
+const ClientsRouter = require("./routes/Clients.js");
+app.use("/Clients", ClientsRouter);
+
 // Start the server
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

@@ -1,0 +1,52 @@
+body {
+    margin: 0.5px;
+  }
+.header{
+    background-color: #8c52ff;
+    height: 10vh;
+    width: auto;
+    letter-spacing: 10;
+    margin: 0.5%;
+    margin-top: 0.5%;
+    font-size: 25;
+    color:aliceblue;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.addressSec{
+    height: 140px;
+    width: 1000px;
+    column-count: 3;
+    align-content: center;
+    text-align:center;
+    column-gap: 40px;
+    column-span: all;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+.connect{
+    background-color: #8c52ff;
+    height: 10vh;
+    letter-spacing: 10;
+    width: auto;
+    margin: 0.5%;
+    margin-top: 0.5%;
+    font-size: 25;
+    color:aliceblue;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+.time{
+    margin-top: 45px;
+    margin-left: 45px;
+    column-gap: 2;
+
+}
+.office{
+    display: flex;
+}
