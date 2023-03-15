@@ -1,16 +1,25 @@
 .container{
     padding: 0.5px;
     margin: 0.5px;
+    width: 100%;
 }
 
+.sponser{
+    align-items: center;
+    border-spacing: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
 .text{
     background-color: #8c52ff;
     height: 10vh;
-    width: auto;
+    width: 100%;
     letter-spacing: 10;
     font-size:larger;
     margin: 0.5%;
-    margin-top: 0.5%;
+    margin-top: 13vh;
     color:aliceblue;
     justify-content: space-around;
     text-align: center;
@@ -33,16 +42,8 @@ img{
     width: 100px;
 }
 .grid{
-    background-color: #efefef;
-
-}
-table{
+    background-color: red;
     align-items: center;
-    border-spacing: 2px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
 }
 
 th, td {

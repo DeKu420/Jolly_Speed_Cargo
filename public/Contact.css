@@ -1,6 +1,7 @@
 body {
     margin: 0.5px;
   }
+  
 .header{
     background-color: #8c52ff;
     height: 10vh;
@@ -20,7 +21,7 @@ body {
     width: 1000px;
     column-count: 3;
     align-content: center;
-    text-align:center;
+    text-align:justify;
     column-gap: 40px;
     column-span: all;
     margin: auto;
