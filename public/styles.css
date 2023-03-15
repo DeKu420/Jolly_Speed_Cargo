@@ -1,7 +1,3 @@
-* {
-  margin: none;
-}
-
 /* 1st slide */
 .purpleBg {
   background-color: #8c52ff;
@@ -311,6 +307,7 @@
 
 body {
   margin: 0px;
+  background-color: #ebebeb;
 }
 
 nav {
@@ -333,8 +330,16 @@ nav a:hover {
   color: white;
 }
 
-.navbar-collapse.collapse.show {
+/* .navbar-collapse.collapse.show {
   background-color: rgba(255, 255, 255, 0.322);
+} */
+
+.open{
+  background-color: #7531ff;
+}
+
+.nav-link{
+  color: white;
 }
 
 /* Company Profile */
@@ -574,7 +579,7 @@ form {
     display: none;
   }
 
-  .ccontainer-2BG{
+  .ccontainer-2BG {
     height: 10vh;
   }
 
@@ -603,15 +608,15 @@ form {
     height: fit-content;
     width: 90vw !important;
     font-size: 3vw;
-    margin:auto;
+    margin: auto;
     margin-bottom: 2rem;
   }
 
-  .cardSec{
+  .cardSec {
     margin-top: 2rem;
   }
 
-  .card img{
+  .card img {
     width: 60vw;
   }
 
@@ -626,20 +631,20 @@ form {
     margin-bottom: 10px !important;
   }
 
-  .slide1{
+  .slide1 {
     width: 100%;
   }
 
-  .pTitleslide{
+  .pTitleslide {
     width: 90%;
     font-size: 15vw;
   }
 
-  .clientDiv{
+  .clientDiv {
     justify-content: center;
   }
 
-  .testDiv{
+  .testDiv {
     margin-left: 0px;
     margin-right: 0px;
     display: flex;
@@ -647,22 +652,22 @@ form {
     margin-top: 3rem;
   }
 
-  .testDivCont{
-    margin:0px;
+  .testDivCont {
+    margin: 0px;
     margin-bottom: 2rem;
   }
 
-  .infoFuncDiv1 img{
+  .infoFuncDiv1 img {
     height: 200px;
     width: 200px;
     margin-top: 20px;
   }
 
-  .infoFuncDiv1 h2{
+  .infoFuncDiv1 h2 {
     margin: 20px 0 20px 20px;
   }
 
-  .infoFuncDiv1 h3{
+  .infoFuncDiv1 h3 {
     margin-bottom: 20px;
   }
 }
