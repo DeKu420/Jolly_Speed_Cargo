@@ -46,7 +46,7 @@ app.use("/office-shifting", officeShiftingRouter);
 const blogRouter = require("./routes/blogs.js");
 app.use("/blogs", blogRouter);
 
-<<<<<<< HEAD
+
 //for 5 blogs
 const blog1Router = require("./routes/blogs/blog1.js");
 app.use("/blog1", blog1Router);
@@ -82,13 +82,13 @@ app.use("/kerala", keralaRouter);
 //for Kochi
 const kochiRouter = require("./routes/locations/kochi.js");
 app.use("/kochi", kochiRouter);
-=======
+
 const ContactUsRouter = require("./routes/ContactUs.js");
 app.use("/ContactUs", ContactUsRouter);
 
 const ClientsRouter = require("./routes/Clients.js");
 app.use("/Clients", ClientsRouter);
->>>>>>> 20e9814810961a06a634c7bc90287290569ffc42
+
 
 // Start the server
 const PORT = process.env.PORT || 8000;
