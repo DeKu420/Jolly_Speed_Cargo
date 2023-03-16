@@ -258,6 +258,7 @@
   bottom: 1rem;
   right: 1rem;
   filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+  z-index: 10000;
 }
 
 .footer {
@@ -307,7 +308,7 @@
 
 body {
   margin: 0px;
-  background-color: #ebebeb;
+  background-color: #efefef;
 }
 
 nav {

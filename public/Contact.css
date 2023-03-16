@@ -1,58 +1,79 @@
-.Contactcontainer{
-    padding: 0.5px;
-    margin: 0.5px;
+.Contactcontainer {
+  padding: 0.5px;
+  margin: 0.5px;
+  width: 100%;
+}
+
+.addressSec {
+  height: 70vh;
+  margin: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #efefef;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tt1 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tt1 h3 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.tt1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.connect {
+  background-color: #8c52ff;
+  height: 30vh;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #efefef;
+}
+
+.time {
+  margin-top: 45px;
+  margin-left: 45px;
+  column-gap: 2;
+}
+.office {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .tt1 iframe {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5rem;
+  }
+
+  .row {
     width: 100%;
-}
+  }
 
-.addressSec{
-    height: 60vh;
-    margin:5rem;
-    display: flex;
-    background-color: #efefef;
-    justify-content: space-between;
+  .addressSec {
+    height: fit-content;
+  }
 }
-
-.row{
-    padding-top: 5px;
-    padding-bottom: 10px;
-    background-color: #efefef;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-.tt1 h3{
-    font-family: "Inter", sans-serif;
-    text-align: justify;
-}
-
-.tt1 h2{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
-
-.connect{
-    background-color: #8c52ff;
-    height: 15vh;
-    color:aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.connect h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    color: #efefef;
-}
-
-.time{
-    margin-top: 45px;
-    margin-left: 45px;
-    column-gap: 2;
-}
-.office{
-    display: flex;
-}
-
