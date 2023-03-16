@@ -491,6 +491,10 @@ form {
   border-radius: 5px;
   border: none;
 }
+.blogs {
+  padding: 20px;
+  background-color: #efefef;
+}
 
 .blogsText {
   width: 80%;
@@ -500,9 +504,11 @@ form {
   text-justify: inter-word;
   margin: auto;
   font-size: 20px;
+  padding: 2px;
 }
 
 .BlogsTitle {
+  padding-top: 5px;
   font-family: "Martel Sans", sans-serif;
   color: #193f56;
   text-align: start;
@@ -514,4 +520,8 @@ form {
   font-style: normal;
   color: rgb(255, 173, 0);
   text-decoration: none;
+}
+
+.dropdownLink{
+  font-size: larger;
 }
