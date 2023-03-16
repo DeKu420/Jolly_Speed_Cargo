@@ -334,11 +334,11 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.322);
 } */
 
-.open{
+.open {
   background-color: #7531ff;
 }
 
-.nav-link{
+.nav-link {
   color: black;
 }
 
@@ -553,10 +553,14 @@ form {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.dropdownLink{
+.dropdownLink {
   font-size: larger;
-=======
+}
+
+#hamburger {
+  outline: 1px solid transparent;
+}
+
 @media only screen and (max-width: 700px) {
   .title,
   .container-2,
@@ -680,5 +684,4 @@ form {
   .infoFuncDiv1 h3 {
     margin-bottom: 20px;
   }
->>>>>>> 20e9814810961a06a634c7bc90287290569ffc42
 }
