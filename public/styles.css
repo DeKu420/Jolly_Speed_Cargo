@@ -253,27 +253,45 @@
 
 /* footer */
 
+.whatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+}
+
 .footer {
   display: flex;
-  /* width: 100%; */
-  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-right: 2rem;
   align-items: center;
   color: #193f56;
+  object-fit: contain;
+  height: fit-content;
+}
+
+.footerBg {
+  height: fit-content;
+  background-color: #efefef;
 }
 
 .footer img {
-  height: 60rem;
+  height: 800px;
+  max-width: 100vw;
 }
 
 .footer h2 {
   font-family: "Roboto Mono", monospace;
   font-weight: 800;
   margin-bottom: 1rem;
+  font-size: 2em;
 }
 
 .footer h3 {
   font-family: "Roboto Mono", monospace;
+  font-size: 1em;
 }
 
 .footerInfo {
@@ -289,6 +307,7 @@
 
 body {
   margin: 0px;
+  background-color: #ebebeb;
 }
 
 nav {
@@ -309,6 +328,18 @@ nav a {
 
 nav a:hover {
   color: white;
+}
+
+/* .navbar-collapse.collapse.show {
+  background-color: rgba(255, 255, 255, 0.322);
+} */
+
+.open{
+  background-color: #7531ff;
+}
+
+.nav-link{
+  color: black;
 }
 
 /* Company Profile */
@@ -515,13 +546,139 @@ form {
   width: 80%;
   margin: auto;
 }
-.readMore{
+.readMore {
   font-weight: 400;
   font-style: normal;
   color: rgb(255, 173, 0);
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .dropdownLink{
   font-size: larger;
+=======
+@media only screen and (max-width: 700px) {
+  .title,
+  .container-2,
+  .imgFuncDiv,
+  .cardSec,
+  .testDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-header,
+  .funcHeader,
+  .cardHeader,
+  .clientHeader {
+    font-size: 10vw;
+    margin: auto;
+    text-align: center;
+    margin: 3vh;
+  }
+
+  /* .cardSec, .testDiv, .cardHeader, .clientHeader{
+    display: none;
+  } */
+
+  .title img {
+    height: 20vh;
+  }
+
+  .manBox {
+    display: none;
+  }
+
+  .ccontainer-2BG {
+    height: 10vh;
+  }
+
+  .about-para {
+    top: 1rem;
+    font-size: 5vw;
+  }
+
+  .functionDiv {
+    height: fit-content;
+  }
+
+  .cardDiv {
+    height: fit-content;
+  }
+
+  .whatsapp {
+    z-index: 1000;
+  }
+
+  .testemonials {
+    height: fit-content;
+  }
+
+  .card {
+    height: fit-content;
+    width: 90vw !important;
+    font-size: 3vw;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .cardSec {
+    margin-top: 2rem;
+  }
+
+  .card img {
+    width: 60vw;
+  }
+
+  .cardDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardsHeader {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .slide1 {
+    width: 100%;
+  }
+
+  .pTitleslide {
+    width: 90%;
+    font-size: 15vw;
+  }
+
+  .clientDiv {
+    justify-content: center;
+  }
+
+  .testDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .testDivCont {
+    margin: 0px;
+    margin-bottom: 2rem;
+  }
+
+  .infoFuncDiv1 img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .infoFuncDiv1 h2 {
+    margin: 20px 0 20px 20px;
+  }
+
+  .infoFuncDiv1 h3 {
+    margin-bottom: 20px;
+  }
+>>>>>>> 20e9814810961a06a634c7bc90287290569ffc42
 }
