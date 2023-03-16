@@ -1,15 +1,19 @@
 const express = require("express");
-const app = express();
+const app = express();  
+const connectToMongoDB = require("./config/mongoLocal"); 
+
+connectToMongoDB();
 
 app.set("views", "./views");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+
 // Middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
-app.get('/blogs/styles.css', function(req, res) {
-  res.set('Content-Type', 'text/css');
-  res.sendFile(__dirname + '/public/blogs/styles.css');
+app.get("/blogs/styles.css", function (req, res) {
+  res.set("Content-Type", "text/css");
+  res.sendFile(__dirname + "/public/blogs/styles.css");
 });
 // Routes
 
@@ -26,15 +30,15 @@ app.use("/booking", bookingRouter);
 const service1Router = require("./routes/services.js");
 app.use("/residential-relocation", service1Router);
 
-// Our Services : Insurance 
+// Our Services : Insurance
 const insuranceRouter = require("./routes/services/insurance.js");
 app.use("/insurance", insuranceRouter);
 
-// Our Services : Automobile Transportation 
+// Our Services : Automobile Transportation
 const automobileRouter = require("./routes/services/automobileTransportation.js");
 app.use("/automobile-transportaion", automobileRouter);
 
-// Our Services : Loading and Unloading 
+// Our Services : Loading and Unloading
 const loadUnloadRouter = require("./routes/services/loadUnload.js");
 app.use("/load-unload", loadUnloadRouter);
 
@@ -42,10 +46,9 @@ app.use("/load-unload", loadUnloadRouter);
 const officeShiftingRouter = require("./routes/services/officeShifting.js");
 app.use("/office-shifting", officeShiftingRouter);
 
-// for blog 
+// for blog
 const blogRouter = require("./routes/blogs.js");
 app.use("/blogs", blogRouter);
-
 
 //for 5 blogs
 const blog1Router = require("./routes/blogs/blog1.js");
@@ -88,7 +91,6 @@ app.use("/ContactUs", ContactUsRouter);
 
 const ClientsRouter = require("./routes/Clients.js");
 app.use("/Clients", ClientsRouter);
-
 
 // Start the server
 const PORT = process.env.PORT || 8000;
