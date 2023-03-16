@@ -3,57 +3,48 @@
     margin: 0.5px;
     width: 100%;
 }
-.conn{
-    background-color: #8c52ff;
-    height: 10vh;
-    width: auto;
-    font-family:"Inter", sans-serif;
-    margin: 0.5%;
-    margin-top: 10vh;
-    color:aliceblue;
-    justify-content: space-around;
-    text-align: center;
-}
 
 .addressSec{
+    height: 60vh;
+    margin:5rem;
     display: flex;
+    background-color: #efefef;
+    justify-content: space-between;
 }
 
-#address{
-    align-items: center;
-    border-spacing: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-}
-
-#t1{
+.row{
     padding-top: 5px;
     padding-bottom: 10px;
+    background-color: #efefef;
     padding-left: 10px;
-    text-align: center;
     padding-right: 10px;
-    font-size: 25;
 }
-#t2{
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+
+
+.tt1 h3{
+    font-family: "Inter", sans-serif;
     text-align: justify;
-    padding-right: 10px;
+}
+
+.tt1 h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .connect{
     background-color: #8c52ff;
-    height: 10vh;
-    letter-spacing: 10;
-    width: auto;
-    margin: 0.5%;
-    margin-top: 0.5%;
-    font-size: 25;
+    height: 15vh;
     color:aliceblue;
-    text-align: center;
-    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #efefef;
 }
 
 .time{
@@ -64,3 +55,4 @@
 .office{
     display: flex;
 }
+

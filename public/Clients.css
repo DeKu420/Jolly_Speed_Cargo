@@ -2,7 +2,9 @@
     padding: 0.5px;
     margin: 0.5px;
     width: 100%;
+    background-color: #efefef;
 }
+
 
 .clie{
     background-color: #8c52ff;
@@ -23,7 +25,7 @@
     letter-spacing: 10;
     font-size:larger;
     margin: 0.5%;
-    margin-top: 0.5%;
+    margin-top: 2%;
     color: rgba(0, 0, 0, 0.5);
     justify-content: space-around;
     text-align: center;
@@ -31,7 +33,7 @@
 }
 
 #logo{
-    width: 130px;
+    width: 250px;
 }
 
 #sponser{
@@ -45,13 +47,13 @@
 
 #coll {
     padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #roww{
     padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
