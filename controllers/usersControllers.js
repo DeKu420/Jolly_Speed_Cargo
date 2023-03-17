@@ -67,6 +67,7 @@ module.exports.login = async (req, res) => {
           });
           if (user.admin) {
             return res.status(201).json({ token, admin: true });
+            // res.redirect("/admin");
           } else {
             return res.status(201).json({ token, admin: false });
           }

@@ -1,56 +1,76 @@
-body{
-            text-align: center;
-            background-color: #f1f0f0;
-        }
-      .formtab {
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-      }
-      .formtab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        font-size: 17px;
-      }
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("/assets/banner.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  min-height: 110vh;
+  overflow: hidden;
+}
 
-      .formtab button:hover {
-        background-color: #ccc;
-      }
+body h1{
+  font-size: 3em;
+}
 
+.tablinks{
+  width: 18%;
+}
 
-      .formtab button.active {
-        background-color: #444444;
-        color: white;
-      }
+.formtab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.formtab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  background-color: #4444443b;
+  backdrop-filter: blur(10px);
+}
 
-      .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
-        background-color: #444444;
-        color: white;
-        width: 300px;
-        margin: auto;
-      }
-      .tabcontent input{
-        padding: 10px;
-        border-radius: 10px;
-        border: none;
-      }
-      .tabcontent button{
-        padding: 10px 20px;
-        background-color: #5197d7;
-        color: white;
-        border-radius: 10px;
-        border: none;
-      }
-      #login_btn:hover,#reg_btn:hover{
-        cursor: pointer;
-        background-color: #1a68b1;
-      }
+.formtab button:hover {
+  background-color: #ccc;
+}
+
+.formtab button.active {
+  background-color: #444444;
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6rem 15rem;
+  border-top: none;
+  background-color: #4444443b;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 300px;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.tabcontent input {
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  border: none;
+}
+.tabcontent button {
+  padding: 2rem 5rem;
+  font-size: 1em;
+  background-color: #5197d7;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+#login_btn:hover,
+#reg_btn:hover {
+  cursor: pointer;
+  background-color: #1a68b1;
+}

@@ -20,26 +20,26 @@ const reg_pass = document.getElementById("password");
 const reg_name = document.getElementById("name");
 const reg_btn = document.getElementById("reg_btn");
 
-reg_btn.addEventListener("click",async function(){
-    let response = await fetch("http://localhost:8000/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-          name: reg_name.value,
-          email: reg_email.value,
-          password: reg_pass.value
-      })
-    });
+reg_btn.addEventListener("click", async function () {
+  let response = await fetch("http://localhost:8000/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: reg_name.value,
+      email: reg_email.value,
+      password: reg_pass.value,
+    }),
+  });
 
-    let data = await response.json();
-    console.log(data);
-    if (data.token){
-        alert("You have registered successfully");
-    }else{
-        alert("An error occurred");
-    }
+  let data = await response.json();
+  console.log(data);
+  if (data.token) {
+    alert("You have registered successfully");
+  } else {
+    alert("An error occurred");
+  }
 });
 
 // login
@@ -63,7 +63,7 @@ log_btn.addEventListener("click", async function () {
   let data = await response.json();
   console.log(data);
   if (data.token) {
-    alert("You have Logged in successfully");
+    window.location.replace("/admin");
   } else {
     alert("An error occurred");
   }

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();  
 const connectToMongoDB = require("./config/mongoLocal"); 
+const path = require("path");
 const router = require("./routes/userRoutes");
 const cors = require("cors");
 
@@ -97,6 +98,16 @@ const ClientsRouter = require("./routes/Clients.js");
 app.use("/Clients", ClientsRouter);
 
 app.use("/", router);
+app.get("/login", (req,res)=>{
+  res.render(path.join("pages","login"));
+  res.status(200);
+})
+
+app.use("/", router);
+app.get("/admin", (req, res) => {
+  res.render(path.join("pages", "dashboard"));
+  res.status(200);
+});
 
 // Start the server
 const PORT = process.env.PORT || 8000;
