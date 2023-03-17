@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();  
 const connectToMongoDB = require("./config/mongoLocal"); 
+const router = require("./routes/userRoutes");
+const cors = require("cors");
+
+app.use(cors());
 
 connectToMongoDB();
 
@@ -91,6 +95,8 @@ app.use("/ContactUs", ContactUsRouter);
 
 const ClientsRouter = require("./routes/Clients.js");
 app.use("/Clients", ClientsRouter);
+
+app.use("/", router);
 
 // Start the server
 const PORT = process.env.PORT || 8000;

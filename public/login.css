@@ -1,0 +1,56 @@
+body{
+            text-align: center;
+            background-color: #f1f0f0;
+        }
+      .formtab {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+      .formtab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      .formtab button:hover {
+        background-color: #ccc;
+      }
+
+
+      .formtab button.active {
+        background-color: #444444;
+        color: white;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background-color: #444444;
+        color: white;
+        width: 300px;
+        margin: auto;
+      }
+      .tabcontent input{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+      }
+      .tabcontent button{
+        padding: 10px 20px;
+        background-color: #5197d7;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+      #login_btn:hover,#reg_btn:hover{
+        cursor: pointer;
+        background-color: #1a68b1;
+      }

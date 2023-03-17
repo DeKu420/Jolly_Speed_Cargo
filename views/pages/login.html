@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Account</title>
+    <link rel="stylesheet" href="/public/login.css" />
+  </head>
+  <body>
+    <nav></nav>
+    <h1>Admin Account</h1>
+    <div class="formtab">
+      <button class="tablinks active" onclick="openTab(event,'login')">
+        Login
+      </button>
+      <button class="tablinks" onclick="openTab(event,'register')">
+        Register
+      </button>
+    </div>
+    <div id="login" class="tabcontent">
+      <h3>Enter your credentials</h3>
+      <input type="email" placeholder="Email" id="login_email" /><br /><br />
+      <input
+        type="password"
+        placeholder="Password"
+        id="login_password"
+      /><br /><br />
+      <button id="login_btn">Login</button>
+    </div>
+    <div id="register" class="tabcontent">
+      <h3>Enter your information</h3>
+      <input type="text" placeholder="Name" id="name" /><br /><br />
+      <input type="email" placeholder="Email" id="email" /><br /><br />
+      <input type="password" placeholder="Password" id="password" /><br /><br />
+      <button id="reg_btn">Register</button>
+    </div>
+  </body>
+</html>
+<script src="/public/scripts/login.js"></script>

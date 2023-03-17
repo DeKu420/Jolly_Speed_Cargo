@@ -8,18 +8,33 @@
       <h1>GET A FREE QUOTE</h1>
       <h3>WE ALWAYS USE BEST & FASTEST FLEETS</h3>
       <form action="https://formspree.io/f/xdovzbgw" method="POST">
-        <input type="text" name="name" placeholder="Full Name*" id="" />
-        <input type="email" name="email" placeholder="Email Address*" id="" />
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name*"
+          id="form_name"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address*"
+          id="form_email"
+        />
         <div class="address">
-          <input type="text" name="pickup" placeholder="Pickup" id="" />
+          <input
+            type="text"
+            name="pickup"
+            placeholder="Pickup"
+            id="form_pickup"
+          />
           <input
             type="text"
             name="destinaton"
             placeholder="Destination"
-            id=""
+            id="form_destination"
           />
         </div>
-        <select type="text" name="service" id="">
+        <select type="text" name="service" id="form_service">
           <option value="">Select Service</option>
           <option value="Office Shifting">Office Shifting</option>
           <option value="Automobile Transportation">
@@ -27,10 +42,43 @@
           </option>
           <option value="Corporate Relocation">Corporate Relocation</option>
         </select>
-        <input type="text" name="Phone No." placeholder="Phone No." id="" />
-        <button type="submit" class="submitBtn">Submit</button>
+        <input
+          type="text"
+          name="Phone No."
+          placeholder="Phone No."
+          id="form_phone"
+        />
+        <button type="submit" class="submitBtn" id="form_submit">Submit</button>
       </form>
     </div>
   </div>
 </div>
 <%- include("../components/footer") -%>
+
+<script>
+  form_name = document.getElementById("form_name");
+  form_email = document.getElementById("form_email");
+  form_pickup = document.getElementById("form_pickup");
+  form_destination = document.getElementById("form_destination");
+  form_service = document.getElementById("form_service");
+  form_phone = document.getElementById("form_phone");
+  form_submit = document.getElementById("form_submit");
+
+  form_submit.addEventListener("click", async function (event) {
+    let response = await fetch("http://localhost:8000/booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: form_name.value,
+        email: form_email.value,
+        pickup: form_pickup.value,
+        destination: form_destination.value,
+        service: form_service.value,
+        phone: +form_phone.value,
+        status: 0
+      }),
+    });
+  });
+</script>

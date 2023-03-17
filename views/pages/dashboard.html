@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/public/dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Martel+Sans:wght@700&family=Montserrat&family=Poppins&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Customers</h1>
+      <table>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="container">
+      <h1>Users</h1>
+      <table>
+        <tbody id="user_body"></tbody>
+      </table>
+    </div>
+    <dialog id="editDial">
+      <select name="" id="statusSelect">
+        <option value="">Choose Option Status</option>
+        <option value="0">Enquired</option>
+        <option value="1">Booked</option>
+        <option value="2">Shipped</option>
+        <option value="3">Delivered</option>
+      </select>
+      <button id="editBtn">Edit</button>
+      <button id="editClose">Close</button>
+    </dialog>
+  </body>
+</html>
+
+<script src="/public/scripts/dashboard.js"></script>

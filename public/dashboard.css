@@ -1,0 +1,19 @@
+table{
+    border:1px solid;
+    padding: 10px;
+    width:90%;
+    margin: auto;
+}
+
+th,td{
+    border: 1px solid;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
