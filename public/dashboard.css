@@ -1,19 +1,33 @@
+body{
+    background-color: #ffffff;
+}
+
 table{
-    border:1px solid;
     padding: 10px;
     width:90%;
     margin: auto;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 th,td{
-    border: 1px solid;
     padding: 10px 0px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+th{
+    font-size: 1.5em;
+}
+
+td{
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 h1{
     text-align: center;
     margin-top: 100px;
     font-family: 'Poppins', sans-serif;
+    font-size: 2em;
 }

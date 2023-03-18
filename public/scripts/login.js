@@ -62,9 +62,14 @@ log_btn.addEventListener("click", async function () {
 
   let data = await response.json();
   console.log(data);
-  if (data.token) {
-    window.location.replace("/admin");
-  } else {
-    alert("An error occurred");
+  if(data.token){
+    if(data.admin){
+      window.location.replace("/admin");
+    }
+    else{
+      alert("You are not an admin")
+    }
+  }else{
+    alert("An error occurred.");
   }
 });

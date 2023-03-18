@@ -76,4 +76,8 @@
   .addressSec {
     height: fit-content;
   }
+
+  h1{
+    text-align: center;
+  }
 }

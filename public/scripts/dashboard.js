@@ -43,6 +43,7 @@ const displayData = (data) => {
 
     let td7 = document.createElement("td");
     td7.innerHTML = "Edit";
+    td7.style.cursor = "pointer";
     td7.addEventListener("click", function () {
       dial.showModal();
       editBtn.addEventListener("click", async function () {
@@ -62,16 +63,20 @@ const displayData = (data) => {
 
     let td8 = document.createElement("td");
     td8.innerHTML = "Delete";
+    td8.style.cursor = "pointer";
     td8.style.backgroundColor = "red";
     td8.style.color = "white";
-    td8.addEventListener("click", async function () {
-      let response = await fetch(`http://localhost:8000/booking/${el._id}`, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
+    td8.addEventListener("click", function () {
+      dialDel.showModal();
+      deleteBtn.addEventListener("click", async function () {
+        let response = await fetch(`http://localhost:8000/booking/${el._id}`, {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        window.location.reload();
       });
-      window.location.reload();
     });
 
     tr.append(td1, td2, td3, td4, td5, td6, td9, td7, td8);
@@ -127,4 +132,12 @@ const statusSel = document.getElementById("statusSelect");
 
 closeBtn.addEventListener("click", function () {
   dial.close();
+});
+
+const dialDel = document.querySelector("#delDial");
+const deleteClose = document.getElementById("deleteClose");
+const deleteBtn = document.getElementById("deleteBtn");
+
+deleteClose.addEventListener("click", function () {
+  dialDel.close();
 });
