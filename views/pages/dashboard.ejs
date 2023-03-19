@@ -12,9 +12,31 @@
     />
   </head>
   <body>
+    <div class="navAdminDiv">
+      <nav class="navbarAdmin">
+        <a class="" href="/"
+          ><img src="assets/joker.png" width="60" height="60"
+        /></a>
+        <button type="button" class="logout"><a href="/"> Log out </button></a>
+      </nav>
+    </div>
     <div id="container">
       <h1>Customers</h1>
       <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Email</th><th>Pickup</th><th>Destination</th><th>Service</th><th>Phone</th><th>Status</th>
+            <th>
+              <select name="filter" id="filter">
+                <option value="">Filter By Status</option>
+                <option value="0">Enquired</option>
+                <option value="1">Booked</option>
+                <option value="2">Shipped</option>
+                <option value="3">Delivered</option>
+              </select>
+            </th>
+          </tr>
+        </thead>
         <tbody></tbody>
       </table>
     </div>
